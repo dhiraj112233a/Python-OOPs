@@ -1,0 +1,665 @@
+# ==========================================
+# 1. Student class and object
+# ==========================================
+
+class Student:
+    def display(self):
+        print("Name: Dhiraj")
+        print("Age: 21")
+        print("Course: BBA CA")
+
+s1 = Student()
+s1.display()
+
+
+# ==========================================
+# 2. Employee class
+# ==========================================
+
+class Employee:
+    def display(self):
+        print("Name: Rahul")
+        print("Salary: 30000")
+        print("Department: IT")
+
+e1 = Employee()
+e1.display()
+
+
+# ==========================================
+# 3. Car class
+# ==========================================
+
+class Car:
+    def start(self):
+        print("Car Started")
+
+    def stop(self):
+        print("Car Stopped")
+
+c1 = Car()
+c1.start()
+c1.stop()
+
+
+# ==========================================
+# 4. Mobile class
+# ==========================================
+
+class Mobile:
+    def call(self):
+        print("Calling...")
+
+    def message(self):
+        print("Message Sent")
+
+m1 = Mobile()
+m1.call()
+m1.message()
+
+
+# ==========================================
+# 5. Book class
+# ==========================================
+
+class Book:
+    def display(self):
+        print("Title: Python Programming")
+        print("Author: John")
+        print("Price: 500")
+
+b1 = Book()
+b1.display()
+
+
+# ==========================================
+# 6. BankAccount class
+# ==========================================
+
+class BankAccount:
+    def deposit(self):
+        print("Amount Deposited Successfully")
+
+    def withdraw(self):
+        print("Amount Withdrawn Successfully")
+
+account = BankAccount()
+account.deposit()
+account.withdraw()
+
+
+# ==========================================
+# 7. Calculator class
+# ==========================================
+
+class Calculator:
+    def add(self, a, b):
+        print("Addition:", a + b)
+
+    def subtract(self, a, b):
+        print("Subtraction:", a - b)
+
+    def multiply(self, a, b):
+        print("Multiplication:", a * b)
+
+    def divide(self, a, b):
+        print("Division:", a / b)
+
+cal = Calculator()
+cal.add(10, 5)
+cal.subtract(10, 5)
+cal.multiply(10, 5)
+cal.divide(10, 5)
+
+
+# ==========================================
+# 8. College class
+# ==========================================
+
+class College:
+    def college_details(self):
+        print("College: ABC College")
+        print("City: Pune")
+        print("Course: BBA CA")
+
+college = College()
+college.college_details()
+
+
+# ==========================================
+# 9. Product class
+# ==========================================
+
+class Product:
+    def display(self):
+        print("Product: Laptop")
+        print("Price: 50000")
+        print("Quantity: 2")
+
+product = Product()
+product.display()
+
+
+# ==========================================
+# 10. Customer class
+# ==========================================
+
+class Customer:
+    def show_customer(self):
+        print("Customer Details Displayed")
+
+    def place_order(self):
+        print("Order Placed Successfully")
+
+    def cancel_order(self):
+        print("Order Cancelled Successfully")
+
+customer = Customer()
+customer.show_customer()
+customer.place_order()
+customer.cancel_order()
+
+
+# ==========================================
+# 11. Laptop class
+# ==========================================
+
+class Laptop:
+    def power_on(self):
+        print("Laptop Power ON")
+
+    def power_off(self):
+        print("Laptop Power OFF")
+
+laptop = Laptop()
+laptop.power_on()
+laptop.power_off()
+
+
+# ==========================================
+# 12. Teacher class
+# ==========================================
+
+class Teacher:
+    def display_details(self):
+        print("Name: Amit")
+        print("Subject: Python")
+        print("Experience: 5 Years")
+
+teacher = Teacher()
+teacher.display_details()
+
+
+# ==========================================
+# 13. Company class
+# ==========================================
+
+class Company:
+    def company_details(self):
+        print("Company: ABC Technologies")
+        print("Location: Pune")
+        print("Employees: 100")
+
+company = Company()
+company.company_details()
+
+
+# ==========================================
+# 14. Movie class
+# ==========================================
+
+class Movie:
+    def display(self):
+        print("Movie: 3 Idiots")
+        print("Actor: Aamir Khan")
+        print("Actress: Kareena Kapoor")
+        print("Rating: 9/10")
+
+movie = Movie()
+movie.display()
+
+
+# ==========================================
+# 15. Student using constructor
+# ==========================================
+
+class Student:
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.course)
+
+s1 = Student("Dhiraj", 21, "BBA CA")
+s1.display()
+
+
+# ==========================================
+# 16. Employee using constructor
+# ==========================================
+
+class Employee:
+    def __init__(self, name, salary, department):
+        self.name = name
+        self.salary = salary
+        self.department = department
+
+    def display(self):
+        print("Name:", self.name)
+        print("Salary:", self.salary)
+        print("Department:", self.department)
+
+e1 = Employee("Rahul", 30000, "IT")
+e1.display()
+
+
+# ==========================================
+# 17. Car using constructor
+# ==========================================
+
+class Car:
+    def __init__(self, company, model, price):
+        self.company = company
+        self.model = model
+        self.price = price
+
+    def display(self):
+        print("Company:", self.company)
+        print("Model:", self.model)
+        print("Price:", self.price)
+
+car = Car("Toyota", "Fortuner", 4000000)
+car.display()
+
+
+# ==========================================
+# 18. Mobile using constructor
+# ==========================================
+
+class Mobile:
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price
+
+    def display(self):
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+        print("Price:", self.price)
+
+mobile = Mobile("Apple", "iPhone 13", 50000)
+mobile.display()
+
+
+# ==========================================
+# 19. Book using constructor
+# ==========================================
+
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+
+    def display(self):
+        print("Title:", self.title)
+        print("Author:", self.author)
+        print("Price:", self.price)
+
+book = Book("Python Basics", "John", 500)
+book.display()
+
+
+# ==========================================
+# 20. Product - Calculate total price
+# ==========================================
+
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+    def total_price(self):
+        print("Product:", self.name)
+        print("Total Price:", self.price * self.quantity)
+
+p = Product("Pen", 20, 5)
+p.total_price()
+
+
+# ==========================================
+# 21. BankAccount using constructor
+# ==========================================
+
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Deposited:", amount)
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        print("Withdrawn:", amount)
+
+    def display_balance(self):
+        print("Account Holder:", self.name)
+        print("Balance:", self.balance)
+
+account = BankAccount("Dhiraj", 10000)
+account.deposit(5000)
+account.withdraw(2000)
+account.display_balance()
+
+
+# ==========================================
+# 22. Rectangle - Area and Perimeter
+# ==========================================
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        print("Area:", self.length * self.width)
+
+    def perimeter(self):
+        print("Perimeter:", 2 * (self.length + self.width))
+
+r = Rectangle(10, 5)
+r.area()
+r.perimeter()
+
+
+# ==========================================
+# 23. Circle - Area and Circumference
+# ==========================================
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        print("Area:", 3.14 * self.radius * self.radius)
+
+    def circumference(self):
+        print("Circumference:", 2 * 3.14 * self.radius)
+
+circle = Circle(7)
+circle.area()
+circle.circumference()
+
+
+# ==========================================
+# 24. Student - Total and Percentage
+# ==========================================
+
+class Student:
+    def __init__(self, name, m1, m2, m3):
+        self.name = name
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def result(self):
+        total = self.m1 + self.m2 + self.m3
+        percentage = total / 3
+
+        print("Name:", self.name)
+        print("Total:", total)
+        print("Percentage:", percentage)
+
+student = Student("Dhiraj", 80, 75, 90)
+student.result()
+
+
+# ==========================================
+# 25. Employee - Annual Salary
+# ==========================================
+
+class Employee:
+    def __init__(self, name, monthly_salary):
+        self.name = name
+        self.monthly_salary = monthly_salary
+
+    def annual_salary(self):
+        print("Name:", self.name)
+        print("Annual Salary:", self.monthly_salary * 12)
+
+employee = Employee("Rahul", 30000)
+employee.annual_salary()
+
+
+# ==========================================
+# 26. ShoppingCart - Total Bill
+# ==========================================
+
+class ShoppingCart:
+    def __init__(self, product, price, quantity):
+        self.product = product
+        self.price = price
+        self.quantity = quantity
+
+    def total_bill(self):
+        print("Product:", self.product)
+        print("Total Bill:", self.price * self.quantity)
+
+cart = ShoppingCart("Shoes", 2000, 2)
+cart.total_bill()
+
+
+# ==========================================
+# 27. Laptop using constructor
+# ==========================================
+
+class Laptop:
+    def __init__(self, brand, ram, storage, price):
+        self.brand = brand
+        self.ram = ram
+        self.storage = storage
+        self.price = price
+
+    def display(self):
+        print("Brand:", self.brand)
+        print("RAM:", self.ram)
+        print("Storage:", self.storage)
+        print("Price:", self.price)
+
+laptop = Laptop("Dell", "16GB", "512GB", 60000)
+laptop.display()
+
+
+# ==========================================
+# 28. Customer using constructor
+# ==========================================
+
+class Customer:
+    def __init__(self, customer_id, name, mobile, city):
+        self.customer_id = customer_id
+        self.name = name
+        self.mobile = mobile
+        self.city = city
+
+    def display(self):
+        print("Customer ID:", self.customer_id)
+        print("Name:", self.name)
+        print("Mobile:", self.mobile)
+        print("City:", self.city)
+
+customer = Customer(101, "Dhiraj", "9876543210", "Pune")
+customer.display()
+
+
+# ==========================================
+# 29. Salary - HRA, DA and Gross Salary
+# ==========================================
+
+class Salary:
+    def __init__(self, name, basic):
+        self.name = name
+        self.basic = basic
+
+    def calculate(self):
+        hra = self.basic * 0.20
+        da = self.basic * 0.10
+        gross = self.basic + hra + da
+
+        print("Employee:", self.name)
+        print("HRA:", hra)
+        print("DA:", da)
+        print("Gross Salary:", gross)
+
+salary = Salary("Rahul", 30000)
+salary.calculate()
+
+
+# ==========================================
+# 30. Result - Five Subjects
+# ==========================================
+
+class Result:
+    def __init__(self, name, m1, m2, m3, m4, m5):
+        self.name = name
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+        self.m4 = m4
+        self.m5 = m5
+
+    def calculate(self):
+        total = self.m1 + self.m2 + self.m3 + self.m4 + self.m5
+        percentage = total / 5
+
+        if percentage >= 40:
+            result = "PASS"
+        else:
+            result = "FAIL"
+
+        print("Name:", self.name)
+        print("Total:", total)
+        print("Percentage:", percentage)
+        print("Result:", result)
+
+result = Result("Dhiraj", 80, 75, 90, 70, 85)
+result.calculate()
+
+
+# ==========================================
+# 31. Product - Discount
+# ==========================================
+
+class Product:
+    def __init__(self, name, price, discount):
+        self.name = name
+        self.price = price
+        self.discount = discount
+
+    def final_price(self):
+        discount_amount = self.price * self.discount / 100
+        final = self.price - discount_amount
+
+        print("Product:", self.name)
+        print("Original Price:", self.price)
+        print("Discount:", discount_amount)
+        print("Final Price:", final)
+
+product = Product("Mobile", 20000, 10)
+product.final_price()
+
+
+# ==========================================
+# 32. Electricity Bill
+# ==========================================
+
+class ElectricityBill:
+    def __init__(self, name, units):
+        self.name = name
+        self.units = units
+
+    def calculate_bill(self):
+
+        if self.units <= 100:
+            bill = self.units * 5
+
+        elif self.units <= 200:
+            bill = (100 * 5) + ((self.units - 100) * 7)
+
+        else:
+            bill = (100 * 5) + (100 * 7) + ((self.units - 200) * 10)
+
+        print("Customer:", self.name)
+        print("Units:", self.units)
+        print("Electricity Bill:", bill)
+
+bill = ElectricityBill("Dhiraj", 250)
+bill.calculate_bill()
+
+
+# ==========================================
+# 33. Travel
+# ==========================================
+
+class Travel:
+    def __init__(self, name, source, destination, ticket_price):
+        self.name = name
+        self.source = source
+        self.destination = destination
+        self.ticket_price = ticket_price
+
+    def display(self):
+        print("Passenger:", self.name)
+        print("Source:", self.source)
+        print("Destination:", self.destination)
+        print("Ticket Price:", self.ticket_price)
+
+travel = Travel("Dhiraj", "Pune", "Mumbai", 500)
+travel.display()
+
+
+# ==========================================
+# 34. Three Bank Accounts
+# ==========================================
+
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def display(self):
+        print("Name:", self.name)
+        print("Balance:", self.balance)
+
+
+account1 = BankAccount("Dhiraj", 10000)
+account2 = BankAccount("Rahul", 15000)
+account3 = BankAccount("Amit", 20000)
+
+account1.display()
+account2.display()
+account3.display()
+
+
+# ==========================================
+# 35. Rectangle using methods
+# ==========================================
+
+class Rectangle:
+    def area(self, length, width):
+        print("Area:", length * width)
+
+    def perimeter(self, length, width):
+        print("Perimeter:", 2 * (length + width))
+
+
+rectangle = Rectangle()
+
+rectangle.area(10, 5)
+rectangle.perimeter(10, 5)
