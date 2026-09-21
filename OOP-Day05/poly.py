@@ -725,11 +725,8 @@ for vehicle in vehicles:
     vehicle.start()
 
 
-# ============================================================
-# 22. LIBRARY MANAGEMENT SYSTEM
-# ============================================================
 
-print("\n----- LIBRARY MANAGEMENT SYSTEM -----")
+# 22.
 
 
 class LibraryItem(ABC):
